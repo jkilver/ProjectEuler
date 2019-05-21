@@ -1,0 +1,6 @@
+version: 2
+jobs:
+  build:
+    docker:
+      # Need to publish this to Docker Hub
+      - image: kilver/projecteuler:0.1

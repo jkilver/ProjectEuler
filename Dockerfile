@@ -14,10 +14,16 @@ RUN apt-get update \
         git \
         gcc \
         g++ \
+        cmake \
         libboost-all-dev \
         sudo \
         wget \
         build-essential python3.6 python3.6-dev python3-pip python3.6-venv \
+        # Required for circle ci
+        ssh \
+        tar \
+        gzip \
+        ca-certificates \
     # Cleanup
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
