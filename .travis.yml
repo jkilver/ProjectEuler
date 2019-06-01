@@ -10,5 +10,7 @@ matrix:
     - language: cpp
       compiler: gcc
       before_script:
-        - cd cpp/p001
+        - cd cpp
         - cmake .
+      script:
+        - make
