@@ -11,5 +11,4 @@ matrix:
       compiler: gcc
       before_script:
         - cd cpp/p001
-      script:
-        gcc -o p001 p001.cpp
+        - cmake .
