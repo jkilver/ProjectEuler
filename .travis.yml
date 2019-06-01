@@ -11,6 +11,8 @@ matrix:
       compiler: gcc
       before_script:
         - cd cpp
-        - cmake .
+        - mkdir build
+        - cd build
+        - cmake ..
       script:
         - make
