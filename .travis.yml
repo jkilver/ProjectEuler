@@ -4,3 +4,12 @@ services:
 before_install:
   - ./docker_build.sh
   - ./docker_shell.sh
+script:
+  - cd python
+  - pytest
+  - cd ../cpp
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make -j
+  - exit
